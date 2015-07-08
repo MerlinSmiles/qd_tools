@@ -9,5 +9,7 @@ from .readData import *
 from .getFolder import *
 from .dataItem import *
 from .Map import *
-from .cm import *
+from .cm import cm
 from .style import *
+from .colorbar import *
+from . import LittleParks

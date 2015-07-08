@@ -46,6 +46,7 @@ class getFolder():
         columns = item.data.columns
 
         cAmp = item.meta['setup']['meta']['cAmp']
+        vAmp = item.meta['setup']['meta']['vAmp']
         if 'magnet/fld_as_amps' in columns:
             item.data.rename(columns=lambda x: x.replace('magnet/fld_as_amps', 'field'), inplace=True)
         if 'magnet/fld' in columns:
@@ -58,10 +59,10 @@ class getFolder():
         if 'Iac' in columns:
             item.data['Iac'] *= -cAmp
         if 'Vdc' in columns:
-            item.data['Vdc'] /= 102.25
+            item.data['Vdc'] /= vAmp
             item.data['dV'] = item.data['Vdc'].diff()
         if 'Vac' in columns:
-            item.data['Vac'] /= 102.25
+            item.data['Vac'] /= vAmp
         if 'Vdc' and 'Idc' in columns:
             item.data['V/I']   = item.data['Vdc'] / item.data['Idc']
             item.data['I/V']   = 1.0/item.data['V/I']
