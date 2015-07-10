@@ -12,4 +12,8 @@ from .Map import *
 from .cm import cm
 from .style import *
 from .colorbar import *
+from .imGrid import *
 from . import LittleParks
+from .shiftedColorMap import *
+
+fwidth = 12.6
