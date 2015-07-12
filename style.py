@@ -1,6 +1,6 @@
 import seaborn as sb
 def style(mod = None):
-    sb.set(font_scale=0.9)
+    sb.set(font_scale=0.8)
     # sb.set_style("white")
     # sns.set_style("ticks")
     sb.set_style({'lines.linewidth': 0.3,
@@ -20,14 +20,16 @@ def style(mod = None):
                    'xtick.color': '.0',
                    'xtick.direction': 'in',
                    'xtick.major.size': 3.0,
-                   'xtick.minor.size': 3.0,
+                   'xtick.minor.size': 1,
                    'xtick.major.width': 0.5,
                    'xtick.minor.width': 0.5,
                    'ytick.color': '.0',
                    'ytick.direction': 'in',
                    'ytick.major.size': 3.0,
-                   'ytick.minor.size': 3.1,
+                   'ytick.minor.size': 1,
                    'ytick.major.width': 0.5,
-                   'ytick.minor.width': 0.5
+                   'ytick.minor.width': 0.5,
+                   'axes.labelpad': 2.0,
+                   'savefig.transparent': True,
                   })
     # sb.set_style( mod )

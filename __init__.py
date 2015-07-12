@@ -17,3 +17,4 @@ from . import LittleParks
 from .shiftedColorMap import *
 
 fwidth = 12.6
+fwidth2 = 6.1
