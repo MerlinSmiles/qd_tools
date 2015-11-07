@@ -14,6 +14,8 @@ from .style import *
 from .colorbar import *
 from .imGrid import *
 from . import LittleParks
+from . import funcDirty
+from . import squid
 from .shiftedColorMap import *
 
 fwidth = 12.6

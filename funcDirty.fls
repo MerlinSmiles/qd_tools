@@ -1,0 +1,6 @@
+PWD /Users/Merlin/Google Drive/MasterProject/AB_exp/git/qd_tools
+INPUT /usr/local/texlive/2015/texmf.cnf
+INPUT /usr/local/texlive/2015/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/Merlin/Google Drive/MasterProject/AB_exp/git/qd_tools/funcDirty.py
+OUTPUT /Users/Merlin/Google Drive/MasterProject/AB_exp/git/qd_tools/funcDirty.log

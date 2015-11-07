@@ -18,7 +18,7 @@ def readData(path, columns=None):
             # data = read_blocks(datafile)[0]
     except IOError:
         datafile = os.path.join(path, 'forward.dat')
-        jsonfile = os.path.join(path, 'data.json')
+        jsonfile = os.path.join(path, 'forward.json')
         with open(jsonfile) as json_data:
             names = [x['name'] for x in json.load(json_data)]
 

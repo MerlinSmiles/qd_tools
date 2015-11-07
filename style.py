@@ -23,13 +23,15 @@ def style(mod = None):
                    'xtick.minor.size': 1,
                    'xtick.major.width': 0.5,
                    'xtick.minor.width': 0.5,
+                   'xtick.major.pad':3,
                    'ytick.color': '.0',
                    'ytick.direction': 'in',
                    'ytick.major.size': 3.0,
                    'ytick.minor.size': 1,
                    'ytick.major.width': 0.5,
                    'ytick.minor.width': 0.5,
-                   'axes.labelpad': 2.0,
+                   'ytick.major.pad':3,
+                   # 'axes.labelpad': 0.3,
                    'savefig.transparent': True,
                   })
     # sb.set_style( mod )

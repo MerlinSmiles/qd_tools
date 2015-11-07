@@ -44,9 +44,14 @@ class getFolder():
     def cleanupItem(self, item):
         # print(item.data)
         columns = item.data.columns
-
-        cAmp = item.meta['setup']['meta']['cAmp']
-        vAmp = item.meta['setup']['meta']['vAmp']
+        try:
+            cAmp = item.meta['setup']['meta']['cAmp']
+        except:
+            cAmp = 1
+        try:
+            vAmp = item.meta['setup']['meta']['vAmp']
+        except:
+            vAmp = 1
         if 'magnet/fld_as_amps' in columns:
             item.data.rename(columns=lambda x: x.replace('magnet/fld_as_amps', 'field'), inplace=True)
         if 'magnet/fld' in columns:
@@ -69,6 +74,8 @@ class getFolder():
         if 'Vac' and 'Iac' in columns:
             item.data['dV/dI'] = item.data['Vac'] / item.data['Iac']
             item.data['dI/dV'] = 1.0/item.data['dV/dI']
+        # if 'D_x' in columns:
+        #     item.data['G_d'] = func_conductance(di.data['D_x'])
 
         # return item
 
